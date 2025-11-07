@@ -1,0 +1,34 @@
+[
+  {
+    "id": "CMP001",
+    "name": "Volte e Ganhe 10%",
+    "type": "Loyalty",
+    "status": "Published",
+    "conversionRate": 0.14,
+    "description": "Reativação de clientes inativos com cupom de 10%."
+  },
+  {
+    "id": "CMP002",
+    "name": "Programa Cannoli+",
+    "type": "Loyalty",
+    "status": "Published",
+    "conversionRate": 0.22,
+    "description": "Pontos de fidelidade para recompra e upgrades."
+  },
+  {
+    "id": "CMP003",
+    "name": "Cliente VIP Premium",
+    "type": "Loyalty",
+    "status": "Completed",
+    "conversionRate": 0.26,
+    "description": "Benefícios exclusivos para clientes VIP."
+  },
+  {
+    "id": "CMP004",
+    "name": "Amigos da Casa",
+    "type": "Referral",
+    "status": "Completed",
+    "conversionRate": 0.09,
+    "description": "Indique amigos e ganhe um cannoli."
+  }
+]
