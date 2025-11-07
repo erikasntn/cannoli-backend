@@ -12,7 +12,10 @@ const sequelize = new Sequelize(
     host: process.env.MYSQLHOST,
     port: process.env.MYSQLPORT,
     dialect: "mysql",
-    logging: false, // opcional, evita logs enormes
+    logging: false, 
+      dialectOptions: {
+      ssl: { require: true, rejectUnauthorized: false },
+    },
   }
 );
 
