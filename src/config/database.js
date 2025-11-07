@@ -2,15 +2,15 @@ import { Sequelize } from "sequelize";
 import dotenv from "dotenv";
 
 dotenv.config();
-console.log("DB_USER =", process.env.DB_USER);
+console.log("DB_USER =", process.env.MYSQLUSER);
 
 const sequelize = new Sequelize(
-  process.env.DB_NAME,
-  process.env.DB_USER,
-  process.env.DB_PASS,
+  process.env.MYSQLDATABASE,
+  process.env.MYSQLUSER,
+  process.env.MYSQLPASSWORD,
   {
-    host: process.env.DB_HOST,
-    port: 3306,
+    host: process.env.MYSQLHOST,
+    port: MYSQLPORT,
     dialect: "mysql",
     logging: false, // opcional, evita logs enormes
   }
