@@ -12,9 +12,12 @@ const app = express();
 
 // Configuração de CORS com JWT
 app.use(cors({
-  origin: "http://localhost:3001", 
+  origin: [
+    "https://erikasntn.github.io",           // GitHub Pages
+    "https://erikasntn.github.io/cannoli-dashboard", // caminho completo se o projeto estiver em subpasta
+  ],
   methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true,
 }));
 
 // Configuração de body parser + UTF-8
